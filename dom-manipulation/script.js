@@ -199,10 +199,12 @@ async function syncToServer() {
       body: JSON.stringify(quotes)
     });
     console.log("✅ Quotes synced to server.");
+    showUpdateNotification("Quotes synced with server!");
   } catch (err) {
     console.error("❌ Sync failed:", err);
   }
 }
+
 
 // Handle conflicts and merge server data
 function handleConflict(serverQuotes) {
