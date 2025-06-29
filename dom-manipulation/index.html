@@ -21,16 +21,11 @@
   <button onclick="exportToJson()">Export Quotes to JSON</button>
   <button onclick="fetchFromServer()">Sync Now</button>
 
-  <!-- Add New Quote -->
-  <div>
-    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
-    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
-    <button onclick="addQuote()">Add Quote</button>
-  </div>
-
   <!-- Import File -->
   <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
 
+  <!-- The quote form will be created by JavaScript -->
+  
   <script src="script.js"></script>
 </body>
 </html>
